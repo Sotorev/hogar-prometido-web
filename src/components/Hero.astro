@@ -1,10 +1,19 @@
-<section class="flex items-center justify-center flex-col">
-	<h2 class="font-extrabold text-6xl text-secondary">
-		Ayúdenos a hacer la  diferencia
-	</h2>
-	<p class="text-secondary">Su apoyo puede iluminar el futuro de nuestros niños</p>
-	<button class="font-bold bg-primary p-4 rounded-full uppercase">
-		<a href="">Dona aquí</a>
-	</button>
-</section>
+---
+import { Image } from "astro:assets";
+import cover from "@/img/Orfanato-29.png";
+---
 
+<section class="flex items-center justify-center flex-col w-full">
+  <Image src={cover} alt="Niños jugando en el parque" />
+  <div class="py-12 flex flex-col gap-4">
+    <h2 class="font-extrabold text-6xl text-secondary">
+      Ayúdenos a hacer la diferencia
+    </h2>
+    <p class="text-secondary">
+      Su apoyo puede iluminar el futuro de nuestros niños
+    </p>
+  </div>
+  <button class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary ">
+    <a href="">Dona aquí</a>
+  </button>
+</section>

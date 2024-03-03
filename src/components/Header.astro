@@ -2,10 +2,51 @@
 
 ---
 
-<nav class="w-full flex justify-center">
-	<ul class="flex  gap-6">
-		<li class="font-bold text-dark-primary hover:scale-125 transition-all -translate-y-1"><a href="">Inicio</a></li>
-		<li class="font-bold text-dark-primary hover:scale-125 transition-all -translate-y-1"><a href="">Sobre nosotros</a></li>
-		<li class="font-bold text-dark-primary hover:scale-125 transition-all -translate-y-1"><a href="">Tu donación va a</a></li>
-	</ul>
-</nav>
+<header class="">
+  <nav class="w-full flex justify-center p-4 top-0 fixed z-10 bg-quaternary transition-all navbar">
+    <script>
+      const header = document.querySelector(".navbar");
+      const lastScroll = (function () {
+        let lastScroll = 0;
+        return function (value?: number) {
+          if (value) {
+            lastScroll = value;
+          }
+          return lastScroll;
+        };
+      })();
+      lastScroll(window.scrollY);
+
+	  function handleScroll() {
+		if (window.scrollY < lastScroll()) {
+          header?.classList.remove("hidden-navbar");
+        } else {
+          header?.classList.add("hidden-navbar");
+        }
+        lastScroll(window.scrollY);
+      }
+
+      window.addEventListener("scroll", handleScroll);
+    </script>
+    <ul class="flex gap-6 items-center">
+      <!-- <li class="font-bold text-dark-primary hover:scale-125 transition-all"><a href="">Nosotros</a></li> -->
+      <li class="font-bold text-dark-primary hover:scale-125 transition-all">
+        <a href="">Galería</a>
+      </li>
+      <button class="font-bold text-dark-primary hover:scale-125 transition-all"
+        >Contacto</button
+      >
+      <button
+        class="font-bold text-dark-primary border-dark-primary border-solid border-2 rounded-full py-2 px-4 hover:bg-dark-primary hover:text-white"
+        >Dona aquí</button
+      >
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .hidden-navbar {
+	transform: translateY(-100%);
+	box-shadow: 0 0 10px rgba(0,0,0,.548);
+  }
+</style>

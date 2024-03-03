@@ -7,6 +7,7 @@ export default {
 				'primary': '#9ED900',
 				'secondary': '#333',
 				'tertiary': '#ddd',
+				'quaternary': '#f7faf0',
 				'accent': '#FFD700',
 				'dark-primary': '#8CB22E',
 			},
