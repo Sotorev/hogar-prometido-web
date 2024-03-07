@@ -1,0 +1,28 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import "photoswipe/style.css";
+---
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+</script>
+
+<Layout title="Galeria">
+  <div class="grid grid-cols-3" id="gallery">
+    <a
+      href="/img/Orfanato-29.webp"
+      data-pswp-width="1920"
+      data-pswp-height="1080"
+      target="_blank"
+    >
+      <img src="/img/Orfanato-29.webp" alt="" />
+    </a>
+  </div>
+</Layout>

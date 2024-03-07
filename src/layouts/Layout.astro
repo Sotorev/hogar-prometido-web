@@ -1,6 +1,9 @@
 ---
 // Supports weights 300-800
 import "@fontsource-variable/open-sans";
+import Footer from '@/components/Footer.astro';
+import Header from "@/components/Header.astro";
+import MobileSideBar from "@/components/MobileMenu";
 interface Props {
   title: string;
 }
@@ -18,9 +21,12 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Header />
+    <MobileSideBar client:load />
     <div class="">
       <slot />
     </div>
+    <Footer />
   </body>
 </html>
 <style is:global>

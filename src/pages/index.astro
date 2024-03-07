@@ -1,19 +1,13 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
 import Info from '@/components/Info.astro';
-import Footer from '@/components/Footer.astro';
-import Sidebar from '@/components/MobileMenu';
 ---
 
 <Layout title="Hogar prometido">
-	<Header />
 	<Hero />
 	<main class="p-4">
-		<Sidebar client:load />
 		<!-- <h1 class="text-white">Hogar prometido</h1> -->
 		<Info />
 	</main>
-	<Footer />
 </Layout>

@@ -1,18 +1,33 @@
 ---
 import InfoDialog from "@/components/InfoDialog.astro";
-import image from "@/img/Orfanato-29.png";
+import cumpe from "@/img/cumple.jpg";
+import donaciones from "@/img/donaciones.jpg";
+import historias from "@/img/historias.jpg";
+import nosotros from "@/img/nosotros.jpg";
+
 ---
 
-<section class="flex flex-col md:flex-row md:gap-4 justify-center items-center">
+<section class="flex flex-col md:flex-row md:gap-4 gap-8 justify-center items-center">
   <InfoDialog
     title="Padrinos"
     description="Apadrina a nuestros niños"
-    image={image}
+    image={nosotros}
   />
   <InfoDialog
-    title="Voluntarios"
+    title="Donaciones"
+    description="Apoya nuestra causa"
+    image={donaciones}
+  />
+  <InfoDialog
+    title="Historias"
     description="Únete a nosotros"
-    image={image}
+    image={historias}
+  />
+
+  <InfoDialog
+    title="Nosotros"
+    description="Quienes somos"
+    image={nosotros}
   />
   
 </section>
