@@ -3,26 +3,27 @@ import Whatsapp from "@/icons/WhatsappLogo.astro";
 import Facebook from "@/icons/FacebookLogo.astro";
 ---
 
-<footer class="w-full border-primary border-t-2 flex flex-col md:flex-row px-4 py-6 md:py-12 md:px-24" id="contact">
-  <div class="md:flex-1">
-    <h3 class="text-2xl font-bold text-primary">Dirección</h3>
-    <p class="text-secondary">
+<footer class="w-full bg-primary border-primary border-t-2 flex flex-col items-center justify-center md:flex-row px-4 py-6 md:py-12 md:px-24 min-h-64 md:min-h-96" id="contact">
+  <div class="md:flex-1 gap-4 flex flex-col">
+    <h3 class="text-xl uppercase font-bold text-white">Hogar prometido</h3>
+    <p class="text-white font-bold">
       O calle 8-95 zona 9 de Quetzaltenango Dentro de las instalaciones del
       Instituto Bíblico Enseñanza de Agua, Por la Colonia Cerezos 2
+    </p>
+    <p class="text-white">
+      <i>Teléfono: </i>
+      <br />
+      <b>+502 5690 2150</b>
     </p>
   </div>
   <div class="flex-1">
     <h3 class="text-2xl font-bold text-primary">Contacto</h3>
-    <p class="text-secondary">
-      Teléfono: +502 5690 2150
-      <br />
-    </p>
-    <div class="flex space-x-4">
+    <div class="flex space-x-4 text-white">
       <a href="https://www.facebook.com/ElHogarPrometido" target="_blank">
-        <Facebook class="w-8 h-8 hover:scale-125 transition-all" />
+        <Facebook class="w-8 h-8 hover:scale-125 transition-all hover:text-white" />
       </a>
       <a href="https://wa.me/50256902150" target="_blank">
-        <Whatsapp class="w-8 h-8 hover:scale-125 transition-all" />
+        <Whatsapp class="w-8 h-8 hover:scale-125 transition-all hover:text-white" />
       </a>
     </div>
   </div>
