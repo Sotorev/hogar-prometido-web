@@ -3,30 +3,30 @@
 ---
 
 <header class="">
-  <nav class="hidden md:flex w-full justify-center p-4 top-0 fixed z-10 bg-white transition-all navbar">
+  <nav class="hidden md:flex w-full justify-center p-4 top-0 z-10 bg-white transition-all navbar">
     <script>
-      const header = document.querySelector(".navbar");
-      const lastScroll = (function () {
-        let lastScroll = 0;
-        return function (value?: number) {
-          if (value) {
-            lastScroll = value;
-          }
-          return lastScroll;
-        };
-      })();
-      lastScroll(window.scrollY);
+    //   const header = document.querySelector(".navbar");
+    //   const lastScroll = (function () {
+    //     let lastScroll = 0;
+    //     return function (value?: number) {
+    //       if (value) {
+    //         lastScroll = value;
+    //       }
+    //       return lastScroll;
+    //     };
+    //   })();
+    //   lastScroll(window.scrollY);
 
-	  function handleScroll() {
-		if (window.scrollY < lastScroll()) {
-          header?.classList.remove("hidden-navbar");
-        } else {
-          header?.classList.add("hidden-navbar");
-        }
-        lastScroll(window.scrollY);
-      }
+	  // function handleScroll() {
+		// if (window.scrollY < lastScroll()) {
+    //       header?.classList.remove("hidden-navbar");
+    //     } else {
+    //       header?.classList.add("hidden-navbar");
+    //     }
+    //     lastScroll(window.scrollY);
+    //   }
 
-      window.addEventListener("scroll", handleScroll);
+    //   window.addEventListener("scroll", handleScroll);
     </script>
     <ul class="flex gap-6 items-center">
       <!-- <li class="font-bold text-dark-primary hover:scale-125 transition-all"><a href="">Nosotros</a></li> -->
