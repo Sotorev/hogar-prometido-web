@@ -1,0 +1,27 @@
+---
+import InfoDialog from "../components/InfoDialog.astro";
+import mision from "@/img/mision.jpg";
+import vision from "@/img/vision.jpg";
+---
+
+<section
+  class="flex flex-col md:flex-row md:gap-4 gap-8 justify-center items-center"
+>
+  <div class="w-full md:w-1/2">
+    <InfoDialog
+      title="Misión"
+      description="Brindar atención de calidad para Niños y Niñas, supliendo sus necesidades de protección, vivienda, alimentación, vestuario, salud integral, educación formal y orientación espiritual."
+      image={mision}
+      href="#"
+    />
+  </div>
+
+  <div class="w-full md:w-1/2">
+    <InfoDialog
+      title="Visión"
+      description="Proveer un ambiente familiar para Niños y Niñas en situación de orfandad, ofreciendo cuidado integral"
+      image={vision}
+      href="#"
+    />
+  </div>
+</section>

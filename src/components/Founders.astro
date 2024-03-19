@@ -1,0 +1,27 @@
+---
+import fundadores from "../img/fundadores.jpg";
+import directores from "../img/directores.jpg";
+import CircleDialog from "./CircleDialog.astro";
+---
+
+<section
+  class="flex flex-col md:flex-row md:gap-4 gap-8 justify-center items-center"
+>
+  <div class="w-full md:w-1/2">
+    <CircleDialog
+      title="Fundadores"
+      description="Clarence y Marion Wright"
+      image={fundadores}
+      href="#"
+    />
+  </div>
+
+  <div class="w-full md:w-1/2">
+    <CircleDialog
+      title="Directores"
+      description="Ubaldo y Guisela Soto"
+      image={directores}
+      href="#"
+    />
+  </div>
+</section>
