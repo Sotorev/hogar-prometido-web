@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import cover from "@/img/cover.jpg";
+import imageHistory from "@/img/bebe-respirador.jpg";
 ---
 
 <section class="flex items-center justify-center flex-col w-full">
@@ -13,7 +14,31 @@ import cover from "@/img/cover.jpg";
       Tu apoyo puede iluminar el futuro de nuestros niños
     </p>
   </div>
-  <button class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary ">
+  
+  <button class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary mb-4">
     <a href="">Dona aquí</a>
   </button>
+
+    <!-- historia conmovedora  -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 auto-rows-min">
+      <div class="w-full md:h-1/2 row-span-2 sm:col-span-1">/
+        <Image src={imageHistory} alt="Niños jugando en el parque" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full gap-4 px-8 py-12 col-start-1 sm:col-start-2">
+        <h2 class="font-extrabold text-6xl text-secondary mb-4">
+          ¡Hola! Soy Ladit
+        </h2>
+        <p class="text-secondary text-xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum velit vel pulvinar consequat. Maecenas nec ante sed urna vestibulum consectetur. Donec vel urna ac sapien posuere scelerisque. Quisque vitae dui vitae enim finibus rhoncus. Nam nec leo sit amet enim porta ullamcorper nec id sem. Aliquam erat volutpat. Sed fringilla venenatis mi, id varius elit suscipit vel. Integer sit amet volutpat odio. Sed mattis metus in libero cursus, a fringilla lorem vestibulum. Vivamus placerat neque nec risus congue, vitae consequat dui varius. Suspendisse potenti. Nunc molestie velit ut lorem scelerisque, sit amet efficitur purus condimentum. Curabitur id purus nec nisi commodo hendrerit. Cras malesuada, lectus et feugiat tempor, urna tortor vehicula nunc, a pharetra justo tellus eget nunc.
+        </p>
+        <button class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary mb-4">
+          <a href="">Apadrina a niños como yo</a>
+        </button>
+      </div>
+    </div>
+    
+
+
+  </div>
+
 </section>

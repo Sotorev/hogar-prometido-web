@@ -29,6 +29,9 @@ const MobileSideBar = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 						<li className="text-white">
 							<a href="contacto">Contacto</a>
 						</li>
+						<li className="text-white">
+							<a href="historia">Historia</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
