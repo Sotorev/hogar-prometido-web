@@ -2,18 +2,19 @@
 import { Image } from "astro:assets";
 
 const { title, description, image, href } = Astro.props;
-console.log(href);
 ---
 
 <div class="flex flex-col items-center justify-center">
-  <a href=`${href}`
+  <a 
+    href=`${href}`
+    class="flex flex-col items-center justify-center p-4 space-y-4 bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-300 ease-in-out"
     ><Image
       src={image}
-      alt="A picture of a cat"
+      alt={title}
       width="240"
       class="rounded-2xl object-cover md:w-60 md:h-60"
     />
+    <h1>{title}</h1>
+    <p class="text-dark-primary">{description}</p>
   </a>
-  <h1>{title}</h1>
-  <p class="text-dark-primary">{description}</p>
 </div>
