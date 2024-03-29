@@ -1,10 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "photoswipe/style.css";
-import nosotros from "../img/nosotros.jpg";
-import { Image } from "astro:assets";
-import MisionVision from "../components/MisionVision.astro";
-
 import Founders from "../components/Founders.astro";
 ---
 
@@ -20,24 +16,25 @@ import Founders from "../components/Founders.astro";
 </script>
 
 <Layout title="Nosotros">
-  <div class="py-12 flex flex-col gap-4 px-4 md:px-0">
+  <div class="py-12 flex flex-col gap-4 px-4">
     <h2 class="font-extrabold text-6xl text-secondary">Historia</h2>
     <p class="text-secondary text-xl">
       Desde 1979, la familia de Enseñanza de Agua Viva ha tenido en su corazón
       brindar un lugar digno para el cuidado y protección de niños y niñas en
-      orfandad.
+      orfandad. En 2017 nace "El Hogar Prometido", autorizado según Resolución
+      No. CNA-DG-EPDAN-012-2016 emitida por el Consejo Nacional de Adopciones
+      (CNA).
     </p>
-    <div class="flex items-center justify-center flex-col w-full">
-      <Image src={nosotros} alt="Nosotros" />
-    </div>
-
+    <h2 class="font-extrabold text-6xl text-secondary">Visión</h2>
     <p class="text-secondary text-xl">
-      En 2,017 nace "El Hogar Prometido", autorizado según Resolución No.
-      CNA-DG-EPDAN-012-2016 emitida por el Consejo Nacional de Adopciones (CNA).
+      Nuestra visión es proporcionar atención de alta calidad a niños y niñas,
+      satisfaciendo sus necesidades de protección, alojamiento, alimentación,
+      vestimenta, salud integral, educación formal y orientación espiritual.
     </p>
+    <h2 class="font-extrabold text-6xl text-secondary">Misión</h2>
+    <p class="text-secondary text-xl">
+      Nuestra misión es proporcionar un entorno hogareño para niños y niñas en situación de orfandad, garantizando un cuidado integral y completo.
+    </p>
+    <Founders />
   </div>
-  <MisionVision />
-  <br />
-  <br />
-  <Founders />
 </Layout>
