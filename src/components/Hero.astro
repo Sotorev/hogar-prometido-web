@@ -4,7 +4,7 @@ import cover from "@/img/cover.jpg";
 import imageHistory from "@/img/bebe-respirador.jpg";
 ---
 
-<section class="flex items-center justify-center flex-col w-full">
+<section class="flex items-center justify-center flex-col w-full relative">
   <Image src={cover} alt="Niños jugando en el parque" />
   <div class="py-12 flex flex-col gap-4 px-4 md:px-0">
     <h2 class="font-extrabold text-6xl text-secondary">
@@ -21,8 +21,8 @@ import imageHistory from "@/img/bebe-respirador.jpg";
     <a href="">Dona aquí</a>
   </button>
 
-  <div class="flex max-h-96 items-center w-full flex-col md:flex-row my-20 gap-4">
-    <div class="flex-1">
+  <div class="flex items-center w-full flex-col md:flex-row my-20 gap-4">
+    <div class="flex-1 w-full">
       <Image
         src={imageHistory}
         alt="Niños jugando en el parque"
