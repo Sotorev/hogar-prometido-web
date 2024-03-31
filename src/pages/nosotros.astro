@@ -1,20 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "photoswipe/style.css";
 import Founders from "../components/Founders.astro";
 ---
-
-<script>
-  import PhotoSwipeLightbox from "photoswipe/lightbox";
-
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: "#gallery",
-    children: "a",
-    pswpModule: () => import("photoswipe"),
-  });
-  lightbox.init();
-</script>
-
 <Layout title="Nosotros">
   <div class="py-12 flex flex-col gap-4 px-4 min-h-screen">
     <h2 class="font-extrabold text-6xl text-secondary">Historia</h2>
