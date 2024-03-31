@@ -24,13 +24,19 @@ const MobileSideBar = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 
 					<ul className='flex flex-col justify-start h-2/3 overflow-scroll mx-2' style={{ paddingTop: '1rem' }}>
 						<li className="text-white">
-							<a href="galeria">Galeria</a>
+							<a href="/">Inicio</a>
 						</li>
 						<li className="text-white">
-							<a href="contacto">Contacto</a>
+							<a href="/galeria">Galeria</a>
 						</li>
 						<li className="text-white">
-							<a href="historia">Historia</a>
+							<a href="https://wa.me/50256902150">Whatsapp</a>
+						</li>
+						<li className="text-white">
+							<a href="/historias">Historias</a>
+						</li>
+						<li className="text-white">
+							<a href="/donaciones">Donar</a>
 						</li>
 					</ul>
 				</nav>
