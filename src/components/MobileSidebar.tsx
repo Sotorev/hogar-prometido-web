@@ -22,7 +22,7 @@ const MobileSideBar = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 				{/* Add backdrop div */}
 				<nav className='w-full h-screen flex items-center justify-center'>
 
-					<ul className='flex flex-col justify-start h-2/3 overflow-scroll mx-2' style={{ paddingTop: '1rem' }}>
+					<ul className='flex flex-col justify-center gap-4 h-2/3 overflow-scroll mx-2' style={{ paddingTop: '1rem' }}>
 						<li className="text-white">
 							<a href="/">Inicio</a>
 						</li>
