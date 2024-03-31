@@ -1,5 +1,5 @@
 ---
-
+import LogoSVG from "@/components/Logo.astro";
 ---
 
 <header class="">
@@ -33,7 +33,9 @@
     <ul class="flex gap-6 items-center">
       <!-- <li class="font-bold text-dark-primary hover:scale-125 transition-all"><a href="">Nosotros</a></li> -->
       <li>
-        <a href="/"> <img src="" alt="Logo" /></a>
+        <a href="/">
+          <LogoSVG className="w-20 h-20 relative z-50" />
+        </a>
       </li>
       <li class="font-bold text-dark-primary hover:scale-125 transition-all">
         <a href="galeria">Galería</a>
