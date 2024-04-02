@@ -1,8 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Logo from "@/components/Logo.astro";
 ---
 
 <Layout title="Donaciones">
+  <div class="flex items-center justify-center py-4">
+    <Logo className="max-w-72 md:hidden" />
+  </div>
   <div class="p-4 flex flex-col min-h-screen items-cente">
     <h1 class="text-2xl font-bold text-dark-primary">¿Cómo ayudar?</h1>
     <p>¡Tú puedes hacer la diferencia!</p>

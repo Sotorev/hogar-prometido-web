@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import "photoswipe/style.css";
+import Logo from "@/components/Logo.astro";
 ---
 
 <script>
@@ -16,6 +17,7 @@ import "photoswipe/style.css";
 
 <Layout title="Galeria">
   <div class="grid md:grid-cols-3 grid-cols-1  px-4 md:px-0 max-w-6xl gap-8 mx-auto py-20" id="gallery">
+    <Logo className="max-w-80 md:hidden" />
     {
       Array.from({ length: 9 }).map((_, i) => {
         return (
