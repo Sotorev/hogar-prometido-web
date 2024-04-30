@@ -6,20 +6,20 @@ import Plan from "@/components/Plan.astro";
 <Layout title="Padrinos">
   <div class="min-h-screen">
     <div class="py-12 flex flex-col gap-4 px-4 md:px-0">
-      <h2 class="font-extrabold text-5xl text-secondary text-center">
+      <h2 class="font-extrabold text-4xl sm:text-5xl text-secondary text-center">
         Programas de Apadrinamiento
       </h2>
-      <p class="text-secondary text-xl mt-5 mx-10">
+      <p class="text-secondary text-xl mt-5 mx-1 md:mx-10">
         Con tu ayuda podemos hacer posible que nuestros niños y niñas en
         situación de vulnerabilidad puedan tener acceso a sus derechos
         fundamentales. Con tu aporte mensual, podrás ser parte de la vida de un
         niño o niña, y juntos, podremos cambiar su futuro.
       </p>
-      <p class="text-secondary text-xl mx-10">
+      <p class="text-secondary text-xl mx-1 md:mx-10">
         El padrino o madrina puede escoger entre uno de estos planes:
       </p>
     </div>
-    <div class="flex justify-center items-center gap-4 mx-20">
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 mx-2 md:mx-20">
       <Plan
         title="Plan A"
         aporte="Q100.00"
@@ -33,17 +33,15 @@ import Plan from "@/components/Plan.astro";
       <Plan
         title="Plan C"
         aporte="Q500.00"
-        description="Cubre alimentación, vestuario y calzado, servicios médicos y estimulación temprana."
+        description="Cubre alimentación, vestuario, calzado y educación."
       />
     </div>
-    <p class="text-dark-secondary mx-10 mb-10">
+
+    <p class="text-dark-secondary mt-8 mb-4 text-center mx-2">
       *PLAN ABIERTO: El padrino o madrina define la cantidad que desea aportar.
     </p>
     <div class="flex justify-center">
-      <a
-        class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary mb-20"
-        href="/donaciones"
-      >
+      <a class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary mb-20" href="/donaciones">
         Quiero ser padrino
       </a>
     </div>
