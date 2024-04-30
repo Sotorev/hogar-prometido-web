@@ -22,39 +22,26 @@ import imageHistory from "@/img/bebe-respirador.jpg";
     Dona aquí
   </a>
 
-  <div class="flex items-center w-full flex-col md:flex-row my-20 gap-4">
-    <div class="flex-1 w-full">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-8 py-16 px-4 md:px-8 lg:px-16 bg-gray-100">
+    <div class="md:w-1/2 flex justify-center">
       <Image
-        src={imageHistory}
-        alt="Niños jugando en el parque"
-        class="object-cover w-full h-full max-h-96"
-      />
+      src={imageHistory}
+      alt="Niños jugando en el parque"
+      class="w-full max-w-md rounded-lg shadow-lg"
+    />
     </div>
-
-    <div class="w-full flex flex-col py-20 flex-1">
-      <h2 class="font-extrabold text-6xl text-secondary mb-4">
-        ¡Hola! Soy Ladit
-      </h2>
-      <p class="text-secondary text-xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        rutrum velit vel pulvinar consequat. Maecenas nec ante sed urna
-        vestibulum consectetur. Donec vel urna ac sapien posuere scelerisque.
-        Quisque vitae dui vitae enim finibus rhoncus. Nam nec leo sit amet enim
-        porta ullamcorper nec id sem. Aliquam erat volutpat. Sed fringilla
-        venenatis mi, id varius elit suscipit vel. Integer sit amet volutpat
-        odio. Sed mattis metus in libero cursus, a fringilla lorem vestibulum.
-        Vivamus placerat neque nec risus congue, vitae consequat dui varius.
-        Suspendisse potenti. Nunc molestie velit ut lorem scelerisque, sit amet
-        efficitur purus condimentum. Curabitur id purus nec nisi commodo
-        hendrerit. Cras malesuada, lectus et feugiat tempor, urna tortor
-        vehicula nunc, a pharetra justo tellus eget nunc.
-      </p>
-      <a
-        class="font-bold bg-primary p-4 uppercase text-white hover:bg-dark-primary my-4 flex justify-center"
-        href="donaciones"
-      >
-        Apadrina a niños como yo
-      </a>
+    <div class="md:w-1/2">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">Historias de Esperanza: El Camino a un Nuevo Hogar</h2>
+      <p class="text-secondary text-lg mb-6">
+        Era un día cualquiera cuando el destino puso en el camino de una joven ha un pequeño bulto envuelto en trapos. Al acercarse, su corazón se detuvo: <span class="text-red-600 font-bold">era un bebé recién nacido</span>, abandonado a su suerte. Sin dudarlo, lo tomó en brazos y corrió a buscar ayuda.<br />
+        Así fue como este indefenso llegó a <span class="text-primary font-bold">El Hogar Prometido</span>, un refugio que lo recibió con los brazos abiertos. Por más de un año, el equipo dedicado de la institución se encargó de su bienestar y protección, velando por esta criatura que la vida había puesto en peligro.<br />
+        Afortunadamente, la historia de este pequeño no termina ahí. Después de su estadía temporal, una familia amorosa lo acogió y se convirtió en el hogar permanente que tanto merecía. Hoy ese bebé crece seguro, amado y con un futuro prometedor por delante.
+    </p>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-secondary text-lg">Casos como este suceden a diario. Niños inocentes que, por diversas circunstancias, se enfrentan a la negligencia y el abandono. "El Hogar Prometido" está ahí para ellos, brindándoles protección, pero necesita de tu apoyo.</p>
+      </div>
+      <p class="text-secondary text-lg mt-6">Con tu apadrinamiento, más pequeños vulnerables tendrán la oportunidad de encontrar los brazos amorosos que se merecen. Únete a nuestra misión y ayúdanos a construir hogares, uno a la vez.</p>
+      <a href="donaciones" class="inline-block bg-primary text-white py-3 px-6 rounded-lg uppercase font-bold hover:bg-dark-primary transition-colors duration-300 mt-8">Apadrina a niños como yo</a>
     </div>
   </div>
 </section>
