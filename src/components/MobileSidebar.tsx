@@ -27,14 +27,21 @@ const MobileSideBar = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 							<a href="/">Inicio</a>
 						</li>
 						<li className="text-white">
+							<a href="/historias">Historias</a>
+						</li>
+						<li className="text-white">
+							<a href="/programas">Programas</a>
+						</li>
+						<li className="text-white">
 							<a href="/galeria">Galeria</a>
+						</li>
+						<li className="text-white">
+							<a href="/nosotros">Nosotros</a>
 						</li>
 						<li className="text-white">
 							<a href="https://wa.me/50256902150">Whatsapp</a>
 						</li>
-						<li className="text-white">
-							<a href="/historias">Historias</a>
-						</li>
+
 						<li className="text-white">
 							<a href="/donaciones">Donar</a>
 						</li>
