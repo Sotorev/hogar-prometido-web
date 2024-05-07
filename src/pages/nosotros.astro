@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Founders from "../components/Founders.astro";
+import Logo from "@/components/Logo.astro";
 ---
 
 <Layout title="Nosotros">
   <div
-    class="py-12 flex flex-col gap-4 px-4 min-h-screen w-1/2 m-auto my-4 rounded-xl paper-like"
+    class="py-12 flex flex-col gap-4 px-4 min-h-screen md:w-1/2 w-full m-auto my-4 rounded-xl paper-like"
   >
+    <Logo className="max-w-80 md:hidden" />
     <h2 class="font-extrabold text-6xl text-secondary">Historia</h2>
     <p class="text-secondary text-xl">
       Desde 1979, la familia de Enseñanza de Agua Viva ha tenido en su corazón
