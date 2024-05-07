@@ -1,7 +1,7 @@
 ---
 // Supports weights 300-800
 import "@fontsource-variable/open-sans";
-import Footer from '@/components/Footer.astro';
+import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import MobileSideBar from "@/components/MobileMenu";
 interface Props {
@@ -35,6 +35,12 @@ const { title } = Astro.props;
     background: #f4f4f4;
     background-size: 224px;
     scroll-behavior: smooth;
+  }
+
+  .paper-like {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
   }
 
   @media screen and (min-width: 768px) {
